@@ -1,0 +1,172 @@
+@import "../../assets/sass/mixsins";
+@import "../../assets/sass/variables";
+
+.footer {
+  position: relative;
+  overflow: hidden;
+  &__bg {
+    width: 100%;
+    height: auto;
+    background-color: $footer-backround;
+    z-index: 10;
+  }
+  &__img-right-div {
+    position: absolute;
+    top: -34px;
+    right: -90px;
+    width: 337px;
+    height: 337px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__img-left-div {
+    width: 197px;
+    height: 197px;
+    position: absolute;
+    top: 170px;
+    left: -60px;
+  }
+
+  &__main-div {
+    position: relative;
+    z-index: 10;
+    padding-top: 120px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo-img {
+    width: 160px;
+    height: 47px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__text {
+    font-family: $font-family-2;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: $text-color;
+    margin-top: 40px;
+  }
+
+  &__inner-icons-div {
+    margin-top: 20px;
+  }
+  &__inner-span-hover {
+    margin-right: 10px;
+    padding: 8px 10px;
+    border-radius: 50%;
+    background-color: #292929;
+    transition: all 0.5s ease;
+    color: $white;
+    cursor: pointer;
+    &:hover {
+      background-color: $primary-color;
+
+      svg {
+        color: $white;
+      }
+    }
+  }
+  &__inner-facebook {
+    position: relative;
+    top: 2px;
+  }
+  &__inner-twitter {
+    position: relative;
+    top: 2px;
+  }
+  &__inner-linkedin {
+    position: relative;
+    top: 1px;
+  }
+  &__inner-skype {
+    position: relative;
+    top: 3px;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  &__item-text {
+    font-family: $font-family-1;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    margin-bottom: 40px;
+    color: $white;
+  }
+  &__item {
+    font-family: $font-family-2;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 44px;
+    color: $footer-text;
+  }
+
+  &__bootom-bg {
+    margin-top: 120px;
+    width: 100%;
+    background-color: $footer-botton;
+  }
+  &__botton-div {
+    padding: 30px 0px;
+    @include dflex;
+  }
+  &__first-div {
+    @include flex;
+  }
+  &__botton-text {
+    font-family: $font-family-2;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: $white;
+  }
+  &__botton-span {
+    margin-left: 20px;
+  }
+  &__botton-text-center {
+    font-family: $font-family-2;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: $footer-text;
+  }
+
+  &__link {
+    font-family: $font-family-1;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    color: $white;
+  }
+  &__link-item {
+    font-family: $font-family-2;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 44px;
+    color: $footer-text;
+    transition: all 0.3s ease;
+    &:hover {
+      color: $primary-color;
+      transform: translateX(5px);
+    }
+  }
+  @media screen and (max-width: 1200px) {
+    .container {
+      width: 100%;
+      margin: 0 auto;
+      padding: 0 20px;
+      max-width: 1150px;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+@import "../../assets/sass/mixsins";
+@import "../../assets/sass/variables";
+
+.home {
+  position: relative;
+  min-height: 100vh;
+  padding-top: 35px !important;
+  background-image: url("../../assets/images/hero-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  &__main {
+    padding-bottom: 220px;
+  }
+
+  &__hero {
+    padding-top: 220px;
+  }
+
+  @media screen and (max-width: 1200px) {
+    .container {
+      width: 100%;
+      margin: 0 auto;
+      padding: 0 20px;
+      max-width: 1150px;
+    }
+
+  }
+}

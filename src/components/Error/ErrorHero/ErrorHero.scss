@@ -1,0 +1,61 @@
+@import "../../../assets/sass/mixsins";
+@import "../../../assets/sass/variables";
+
+.errorHero {
+  &__inner-div {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__img-div {
+    width: 740px;
+    height: 600px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__text-div {
+    margin-top: 48px;
+  }
+  &__text {
+    font-family: $font-family-1;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+    color: $title-color;
+  }
+  &__span {
+    font-family: $font-family-2;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    margin-top: 32px;
+    color: $text-color;
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+  }
+  &__back {
+    font-family: $font-family-1;
+    padding: 18px 40px;
+    font-weight: 700;
+    font-size: 16px;
+    margin-top: 40px;
+    line-height: 19px;
+    background-color: $primary-color;
+    border-radius: $border-radius2;
+    color: $white;
+  }
+}

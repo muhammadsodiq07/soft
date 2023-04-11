@@ -1,0 +1,65 @@
+@import "../../../assets/sass/mixsins";
+@import "../../../assets/sass/variables";
+
+.SuccessfulProject {
+  &__bg {
+    position: relative;
+    width: 100%;
+    background-color: $primary-color;
+    z-index: 10;
+  }
+  &__main {
+    padding: 120px 0px;
+  }
+  &__title-div {
+    text-align: center;
+  }
+  &__title-span {
+    font-family: $font-family-1;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: $white;
+  }
+  &__title {
+    font-family: $font-family-1;
+    font-weight: 700;
+    font-size: 48px;
+    margin-top: 30px;
+    line-height: 58px;
+    color: $white;
+  }
+  &__button-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  &__btn {
+    @include flex;
+    padding: 12px 30px;
+    font-family: $font-family-1;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    color: $primary-color;
+    background-color: $white;
+    border: 1px solid transparent;
+    border-radius: $border-radius2;
+    transition: all 0.2s ease;
+
+    &:hover {
+      color: $white;
+      border: 1px solid $white;
+      background-color: $primary-color;
+    }
+    &:active {
+      border: 1px solid $active-btn;
+      background-color: $active-btn;
+    }
+  }
+  &__icon {
+    margin-left: 6px;
+  }
+}

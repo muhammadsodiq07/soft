@@ -1,0 +1,50 @@
+@import "../App.scss";
+
+.heroMain {
+  position: relative;
+  width: 100%;
+  min-height: 40vh;
+  background-image: url("../assets/images/about/about-hero.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  // background-position: center left;
+  padding-bottom: 128px;
+  padding-top: 228px;
+  &__pathnames-list {
+    width: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin-bottom: 20px;
+    li {
+      @include dflex;
+      p {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20px;
+        text-transform: capitalize;
+      }
+      span {
+        width: 6px;
+        height: 6px;
+        margin: 0 10px;
+        border-radius: 50%;
+        background-color: $primary-color;
+      }
+      &:last-child {
+        color: $primary-color;
+        span {
+          display: none;
+        }
+      }
+    }
+  }
+  &__title {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 72px;
+    color: $title-color;
+    text-transform: capitalize;
+    font-family: $font-family-1;
+  }
+}

@@ -1,0 +1,76 @@
+@import "../../../assets/sass/mixsins";
+@import "../../../assets/sass/variables";
+
+.OurServicesEmail {
+  &__bg {
+    width: 100%;
+    background-color: $ourServices_bg;
+  }
+  &__main {
+    padding: 120px 0px;
+  }
+  &__dflex {
+    @include dflex;
+  }
+  &__left-span {
+    font-family: $font-family-1;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: $white;
+  }
+  &__left-title {
+    font-family: $font-family-1;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 54px;
+    margin-top: 30px;
+    color: $white;
+  }
+  &__right-div {
+    position: relative;
+    // width: 520px;
+    // height: 140px;
+    background-color: $white;
+    border-radius: $border-radius2;
+  }
+  &__right-inner {
+    padding: 48px 48px;
+    @include dflex;
+  }
+  &__inner-span {
+    font-family: $font-family-1;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: $text-color;
+  }
+  &__inner-box {
+    margin-right: 37px;
+  }
+  &__inner-box-right {
+    margin-left: 37px;
+  }
+  &__inner-span {
+    font-family: $font-family-1;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: $text-color;
+  }
+  &__inner-text {
+    font-family: $font-family-1;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: $title-color;
+  }
+  &__hr {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    width: 2px;
+    height: 140px;
+    border-right: 1px solid $ourServices_bg;
+  }
+}

@@ -1,0 +1,206 @@
+@import "../../../../assets/sass/mixsins";
+@import "../../../../assets/sass/variables";
+
+.email {
+  &__main {
+    width: 100%;
+    background-color: $white;
+    box-shadow: $box-shadow1;
+    border-radius: $border-radius3;
+    transition: all 0.2s ease;
+  }
+  &__inner-div {
+    @include flex;
+  }
+  &__left {
+    width: 50%;
+    padding-top: 130px;
+    padding-bottom: 130px;
+    padding-left: 100px;
+  }
+  &__title-span {
+    @include subTitleSpan;
+  }
+  &__title {
+    @include Title;
+    margin-top: 30px;
+  }
+  &__text {
+    font-family: $font-family-2;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: $text-color;
+  }
+
+  &__mail-div {
+    @include flex;
+    padding-top: 40px;
+  }
+  &__mail-span {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: $primary-color;
+  }
+
+  &__iconSend {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 22px;
+    margin: 0 auto;
+  }
+  &__mail-text-div {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 20px;
+  }
+  &__mail-us {
+    font-family: $font-family-1;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: $text-color;
+  }
+  &__mail-text {
+    font-family: $font-family-1;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    margin-top: 12px;
+    color: $title-color;
+  }
+  &__phone-div {
+    @include flex;
+    padding-top: 30px;
+  }
+  &__right {
+    width: 50%;
+    padding-left: 90px;
+  }
+  &__form {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  &__form-div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+  &__form-span {
+    font-family: $font-family-2;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: $title-color;
+  }
+  &__form-input {
+    width: 100%;
+    max-width: 465px;
+    height: 55px;
+    padding-left: 10px;
+    border-radius: $border-radius2;
+    border: 1px solid #e8eaf0;
+    outline: none;
+    margin-top: 18px;
+  }
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  &__formEmail-div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 25px;
+    width: 100%;
+  }
+  &__formTextarea-div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 25px;
+    width: 100%;
+  }
+  &__form-textarea {
+    padding: 10px;
+    height: 130px;
+    width: 100%;
+    max-width: 465px;
+    border-radius: $border-radius2;
+    border: 1px solid #e8eaf0;
+    outline: none;
+    margin-top: 18px;
+    resize: none;
+  }
+
+  &__button-div {
+    width: 100%;
+    padding-top: 30px;
+  }
+  &__btn {
+    // width: 100px;
+    font-family: $font-family-1;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    width: 465px;
+    border-radius: $border-radius2;
+    padding: 18px;
+    color: $white;
+    background-color: $primary-color;
+
+    &:hover {
+      background-color: rgb(55, 53, 131);
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    .container {
+      width: 100%;
+      margin: 0 auto;
+      padding: 0 20px;
+      max-width: 1150px;
+    }
+    &__left {
+      width: 50%;
+      padding-top: 100px;
+      padding-bottom: 100px;
+      padding-left: 95px;
+    }
+    &__right {
+      width: 50%;
+      padding-left: 30px;
+    }
+    &__title {
+      font-weight: 700;
+      font-size: 38px;
+      line-height: 150%;
+      margin-top: 10px;
+    }
+    &__text {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 150%;
+      margin-top: 20px;
+    }
+    &__form-input {
+      width: 100%;
+      max-width: 400px;
+    }
+    &__form-textarea {
+      width: 100%;
+      max-width: 400px;
+    }
+    &__btn {
+      width: 400px;
+    }
+  }
+}

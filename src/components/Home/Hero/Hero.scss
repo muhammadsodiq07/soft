@@ -1,0 +1,81 @@
+@import "../../../assets/sass/mixsins";
+@import "../../../assets/sass/variables";
+
+.hero {
+  &__title {
+    font-family: $font-family-1;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 82px;
+    margin-top: 40px;
+    color: $title-color;
+  }
+  &__text {
+    font-family: $font-family-2;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 50px;
+    color: $text-color;
+  }
+  &__buttons-div {
+    margin-top: 40px;
+  }
+  &__btn-start {
+    padding: 12px 30px;
+    font-family: $font-family-2;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    border-radius: $border-radius2;
+    color: $white;
+    background-color: $primary-color;
+    @include hover-btn;
+  }
+  &__info-div {
+    margin-right: 16px;
+  }
+  &__flex-div {
+    @include dflex;
+  }
+  &__img-div {
+    width: 630px;
+    height: 500px;
+    transition: all 0.2s linear;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: $border-radius2;
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    &__title {
+      font-size: 62px;
+      line-height: 72px;
+      margin-top: 40px;
+      color: $title-color;
+    }
+    &__text {
+      font-family: $font-family-2;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 30px;
+      margin-top: 50px;
+      color: $text-color;
+    }
+    &__img-div {
+      width: 445px;
+      height: 354px;
+      transition: all 0.2s linear;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: $border-radius2;
+      }
+    }
+  }
+}

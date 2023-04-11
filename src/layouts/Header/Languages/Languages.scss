@@ -1,0 +1,31 @@
+@import "../../../assets/sass/mixsins";
+@import "../../../assets/sass/variables";
+
+.languages__div {
+  display: flex;
+  align-items: center;
+}
+.languages__div-img {
+  width: 32px;
+  height: 32px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.languages__select {
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding-left: 10px;
+  cursor: pointer;
+  font-family: $font-family-2;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  outline: none;
+  color: $title-color;
+  -webkit-appearance: none;
+}

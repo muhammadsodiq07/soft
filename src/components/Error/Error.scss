@@ -1,0 +1,41 @@
+@import "../../assets/sass/mixsins";
+@import "../../assets/sass/variables";
+
+.error {
+  &__inner-div {
+    padding: 12px 0px;
+    @include dflex;
+  }
+  &__text {
+    font-family: $font-family-2;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: $white;
+  }
+  &__inner-right {
+    @include flex;
+  }
+
+  &__right-link {
+    font-family: $font-family-2;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: $white;
+  }
+  &__mail {
+    font-family: $font-family-2;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: $white;
+  }
+  &__header-bg {
+    width: 100%;
+    background-color: $customer-bg;
+  }
+  &__header {
+    padding: 35px 0px;
+  }
+}

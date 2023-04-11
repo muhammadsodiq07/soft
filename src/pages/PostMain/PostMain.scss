@@ -1,0 +1,11 @@
+@import "../../assets/sass/mixsins";
+@import "../../assets/sass/variables";
+
+.postMain {
+  &__postCards {
+    background-color: $white;
+    position: relative;
+    padding: 120px 0px; 
+    z-index: 10;
+  }
+}

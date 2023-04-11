@@ -1,0 +1,27 @@
+@import "../../../assets/sass/mixsins";
+@import "../../../assets/sass/variables";
+
+.company {
+  padding: 120px 0px;
+  &__list {
+    margin-top: 60px;
+    @include dflex;
+    flex-wrap: wrap;
+  }
+  &__item {
+    width: 20%;
+    margin-bottom: 60px;
+    &:nth-child(n + 11) {
+      margin-bottom: 0;
+    }
+  }
+  &__img-div {
+    width: 150px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}

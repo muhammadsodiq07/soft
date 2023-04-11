@@ -1,0 +1,83 @@
+@import "../../../assets/sass/mixsins";
+@import "../../../assets/sass/variables";
+
+.postCards {
+  &__list {
+    width: 100%;
+    @include dflex;
+    flex-wrap: wrap;
+  }
+  &__item {
+    width: 620px;
+    height: 865px;
+    background-color: $white;
+    border: 1px solid $border-post;
+    margin-bottom: 30px;
+  }
+  &__img-div {
+    width: 100%;
+    height: 500px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__box {
+    padding: 30px;
+  }
+  &__inner-div {
+    @include flex;
+  }
+  &__icons-div {
+    @include flex;
+    &:nth-child(n + 2) {
+      margin-left: 30px;
+    }
+  }
+  &__span {
+    font-family: $font-family-2;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: $text-color;
+    margin-left: 10px;
+  }
+  &__icon {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 16px;
+    color: $primary-color;
+  }
+  &__title {
+    font-family: $font-family-1;
+    font-weight: 700;
+    font-size: 28px;
+    margin-top: 30px;
+    line-height: 43px;
+    color: $title-color;
+  }
+
+  &__text {
+    font-family: $font-family-2;
+    font-weight: 400;
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 26px;
+    color: $text-color;
+  }
+  &__btn {
+    padding: 12px 30px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    margin-top: 30px;
+    color: $white;
+    border: 1px solid transparent;
+    border-radius: $border-radius2;
+    background-color: $primary-color;
+    transition: all 0.3s ease;
+    @include hover-btn;
+  }
+}

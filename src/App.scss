@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Urbanist:wght@400;500;600;700;800&display=swap");
+
+// SASS  = = = = =
+@import "./assets/sass/main.scss";
+
+// = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $font-family-1;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  display: flex;
+  min-height: 100vh;
+  overflow-x: hidden;
+  flex-direction: column;
+  // justify-content: center;
+  background-color: $white;
+
+  &::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    border-radius: $border-radius1;
+    box-shadow: inset 0 0 5px grey;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: $white;
+    border-radius: $border-radius1;
+  }
+
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background: $white;
+  }
+}
+button {
+  border: none;
+  cursor: pointer;
+  background: transparent;
+}
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style-type: none;
+}
+a {
+  color: $black;
+  display: inline-block;
+  text-decoration: none !important;
+}
+span {
+  display: inline-block;
+}
+.app {
+  width: 100%;
+  position: relative;
+  background-color: $white;
+}
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 1320px;
+}
+
+.container2 {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 1720px;
+}

@@ -1,0 +1,77 @@
+@import "../../../assets/sass/mixsins";
+@import "../../../assets/sass/variables";
+
+.aboutWorkProcess {
+  // background-color: #000;
+  &__main {
+    padding-bottom: 120px;
+  }
+  &__subTitle {
+    font-family: $font-family-1;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: $primary-color;
+  }
+  &__title {
+    font-family: $font-family-1;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+    margin-top: 30px;
+    text-align: center;
+    color: $title-color;
+  }
+  &__list {
+    @include dflex;
+    padding-top: 70px;
+  }
+  &__item {
+    background-image: url("../../../assets/images/workProcess-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 320px;
+    height: 320px;
+
+    &:hover {
+      background-image: url("../../../assets/images/workProcess-bg.png");
+      background-image: grayscale(100%);
+    }
+  }
+
+  &__inner {
+    padding-top: 55px;
+    padding-right: 30px;
+    @include flex;
+    flex-direction: column;
+  }
+  &__innerImage-div {
+    width: 90px;
+    height: 90px;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__inner-title {
+    font-family: $font-family-1;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    margin-top: 28px !important;
+    align-items: center;
+    color: $title-color;
+  }
+  &__inner-text {
+    font-family: "DM Sans";
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: $text-color;
+  }
+}

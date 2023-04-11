@@ -1,0 +1,16 @@
+@import "../../App.scss";
+
+.faq {
+  position: relative;
+  width: 100%;
+  min-height: 40vh;
+  background-image: url("../../assets/images/about/about-hero.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  // background-position: center left;
+  padding-bottom: 128px;
+
+  &__main {
+    padding-top: 228px;
+  }
+}

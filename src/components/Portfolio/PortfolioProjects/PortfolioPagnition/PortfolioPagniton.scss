@@ -1,0 +1,35 @@
+@import "../../../../assets/sass/mixsins";
+@import "../../../../assets/sass/variables";
+
+.portfolioPagination {
+  &__list {
+    @include flex;
+    justify-content: flex-end;
+  }
+  &__item {
+    margin-right: 8px;
+  }
+
+  &__btn {
+    padding: 6px 18px;
+    font-family: $font-family-1;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+    color: $title-color;
+    background-color: $white;
+    border: 1px solid $border;
+    box-shadow: $box-shadow11;
+    border-radius: $border-radius1;
+    cursor: pointer;
+
+    &:hover {
+      color: $white;
+      background-color: $primary-color;
+    }
+    &:active {
+      color: $white;
+      background-color: $sceondary-color;
+    }
+  }
+}

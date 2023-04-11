@@ -1,0 +1,27 @@
+@import "../../../../assets/sass/mixsins";
+@import "../../../../assets/sass/variables";
+
+.postCardsPagniton {
+  &__list {
+    @include flex;
+    justify-content: flex-end;
+  }
+  &__item {
+    margin-right: 8px;
+  }
+
+  &__btn {
+    padding: 6px 18px;
+    font-family: $font-family-1;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+    color: $white;
+    background-color: $primary-color;
+    border: 1px solid $border;
+    box-shadow: $box-shadow11;
+    border-radius: $border-radius1;
+    cursor: pointer;
+    @include hover-btn2;
+  }
+}

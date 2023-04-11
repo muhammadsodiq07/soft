@@ -1,0 +1,23 @@
+@import "../../../assets/sass/mixsins";
+@import "../../../assets/sass/variables";
+
+.postHero {
+  &__title {
+    font-family: $font-family-1;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 72px;
+    color: $title-color;
+  }
+
+  &__text {
+    font-family: $font-family-1;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: $title-color;
+    span {
+      color: $primary-color;
+    }
+  }
+}

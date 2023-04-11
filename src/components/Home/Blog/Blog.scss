@@ -1,0 +1,139 @@
+@import "../../../assets/sass/mixsins";
+@import "../../../assets/sass/variables";
+
+.blog {
+  padding: 120px 0px;
+
+  &__title-div {
+    text-align: center;
+  }
+  &__title-span {
+    @include subTitleSpan;
+  }
+  &__title {
+    @include Title;
+    margin-top: 30px;
+  }
+
+  &__list {
+    @include dflex;
+    padding-top: 70px;
+  }
+  &__item {
+    width: 100%;
+    max-width: 410px;
+    height: auto;
+    box-shadow: $box-shadow4;
+    background-color: $white;
+    border-radius: $border-radius3;
+    transition: all 0.3s ease;
+  }
+  &__inner-div {
+    padding-top: 30px;
+    padding-bottom: 24px;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  &__inner-img-div {
+    width: 350px;
+    height: 270px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: $border-radius3;
+    }
+  }
+  &__inner-text {
+    font-family: $font-family-1;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    color: $title-color;
+    margin-top: 22px;
+  }
+  &__inner-hr {
+    width: 100%;
+    border-bottom: 1px solid $team-hover-icon;
+    margin-top: 18px;
+  }
+  &__inner-icon-div {
+    @include flex;
+    margin-top: 20px;
+  }
+  &__inner-clock-div {
+    @include flex;
+  }
+  &__inner-user-div {
+    @include flex;
+    margin-left: 12px;
+  }
+  &__inner-icon-span {
+    font-family: $font-family-2;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    margin-left: 8px;
+    color: $text-color;
+  }
+  &__inner-icon {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: $primary-color;
+  }
+  &__inner-icon-user {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: $primary-color;
+  }
+
+  @media screen and (max-width: 1275px) {
+    .container {
+      width: 100%;
+      margin: 0 auto;
+      padding: 0 20px;
+      max-width: 1150px;
+    }
+    &__item {
+      max-width: 350px;
+    }
+    &__inner-img-div {
+      width: 310px;
+      height: 230px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: $border-radius3;
+      }
+    }
+    &__inner-div {
+      padding: 20px;
+    }
+  }
+  @media screen and (max-width: 1095px) {
+    &__item {
+      max-width: 300px;
+    }
+    &__inner-img-div {
+      width: 280px;
+      height: 200px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: $border-radius3;
+      }
+    }
+    &__inner-div {
+      padding: 10px;
+    }
+    &__inner-text {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 28px;
+    }
+  }
+}

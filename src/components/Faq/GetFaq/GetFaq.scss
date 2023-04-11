@@ -1,0 +1,99 @@
+@import "../../../App.scss";
+
+.getFaq {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  &__main {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__left {
+    margin-right: 30px;
+  }
+  &__span {
+    margin-bottom: 26px;
+    @include subTitleSpan;
+  }
+  &__title {
+    width: 100%;
+    @include Title;
+    max-width: 480px;
+    margin-bottom: 50px;
+  }
+  &__right {
+    width: 626px;
+    height: 655px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 30px;
+    }
+  }
+
+  &__left-list {
+    width: 100%;
+    li {
+      width: 600px;
+      height: 70px;
+      cursor: pointer;
+      overflow: hidden;
+      max-width: 600px;
+      padding: 24px 40px;
+      margin-bottom: 20px;
+      border-radius: 15px;
+      background-color: $white;
+      box-shadow: 0px 12px 52px $box-shadow10;
+      svg {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 18px;
+        color: $primary-color;
+      }
+    }
+  }
+  &__text-span {
+    opacity: 0;
+    color: $text-color;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    font-family: $font-family-2;
+    transition: all 0.3s ease;
+  }
+  &__inner-div {
+    display: flex;
+    align-items: center;
+    span {
+      font-family: $font-family-2;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 23px;
+      color: $primary-color;
+      margin-right: 6px;
+    }
+    p {
+      font-family: $font-family-2;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 23px;
+      color: $title-color;
+    }
+  }
+  &__dflex {
+    @include dflex;
+    margin-bottom: 24px;
+  }
+  &__main-inner {
+    display: flex;
+    flex-direction: column;
+  }
+  &__activeHeight {
+    height: auto !important;
+    overflow: visible !important;
+    max-width: 9999px !important;
+  }
+  &__text-span-active {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,68 @@
+const postArr = [
+  {
+    id: 1,
+    day: "15 Jan, 2023",
+    name: "by David Smith",
+    info: "Business Solution",
+    title: "Building smart business solution for you",
+    desc: "Collaboratively pontificate bleeding edge resources with inexpensive methodologies globally initiate multidisciplinary compatible architectures pidiously repurpose leading edge growth strategies with just in time web readiness communicate timely meta services",
+  },
+  {
+    id: 2,
+    day: "15 Jan, 2023",
+    name: "by David Smith",
+    info: "Business Solution",
+    title: "Building smart business solution for you",
+    desc: "Collaboratively pontificate bleeding edge resources with inexpensive methodologies globally initiate multidisciplinary compatible architectures pidiously repurpose leading edge growth strategies with just in time web readiness communicate timely meta services",
+  },
+  {
+    id: 3,
+    day: "15 Jan, 2023",
+    name: "by David Smith",
+    info: "Business Solution",
+    title: "Building smart business solution for you",
+    desc: "Collaboratively pontificate bleeding edge resources with inexpensive methodologies globally initiate multidisciplinary compatible architectures pidiously repurpose leading edge growth strategies with just in time web readiness communicate timely meta services",
+  },
+  {
+    id: 4,
+    day: "15 Jan, 2023",
+    name: "by David Smith",
+    info: "Business Solution",
+    title: "Building smart business solution for you",
+    desc: "Collaboratively pontificate bleeding edge resources with inexpensive methodologies globally initiate multidisciplinary compatible architectures pidiously repurpose leading edge growth strategies with just in time web readiness communicate timely meta services",
+  },
+  {
+    id: 5,
+    day: "15 Jan, 2023",
+    name: "by David Smith",
+    info: "Business Solution",
+    title: "Building smart business solution for you",
+    desc: "Collaboratively pontificate bleeding edge resources with inexpensive methodologies globally initiate multidisciplinary compatible architectures pidiously repurpose leading edge growth strategies with just in time web readiness communicate timely meta services",
+  },
+  {
+    id: 6,
+    day: "15 Jan, 2023",
+    name: "by David Smith",
+    info: "Business Solution",
+    title: "Building smart business solution for you",
+    desc: "Collaboratively pontificate bleeding edge resources with inexpensive methodologies globally initiate multidisciplinary compatible architectures pidiously repurpose leading edge growth strategies with just in time web readiness communicate timely meta services",
+  },
+  {
+    id: 7,
+    day: "15 Jan, 2023",
+    name: "by David Smith",
+    info: "Business Solution",
+    title: "Building smart business solution for you",
+    desc: "Collaboratively pontificate bleeding edge resources with inexpensive methodologies globally initiate multidisciplinary compatible architectures pidiously repurpose leading edge growth strategies with just in time web readiness communicate timely meta services",
+  },
+  {
+    id: 8,
+    day: "15 Jan, 2023",
+    name: "by David Smith",
+    info: "Business Solution",
+    title: "Building smart business solution for you",
+    desc: "Collaboratively pontificate bleeding edge resources with inexpensive methodologies globally initiate multidisciplinary compatible architectures pidiously repurpose leading edge growth strategies with just in time web readiness communicate timely meta services",
+  },
+];
+
+export default postArr;

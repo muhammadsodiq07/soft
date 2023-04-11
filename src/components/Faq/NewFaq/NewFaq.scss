@@ -1,0 +1,130 @@
+@import "../../../App.scss";
+
+.newFaq {
+  padding-bottom: 120px;
+  &__main {
+    @include dflex;
+    margin-bottom: 70px;
+  }
+  &__span {
+    margin-bottom: 10px;
+    @include subTitleSpan;
+  }
+  &__title {
+    @include Title;
+  }
+  &__title-right {
+    button {
+      color: $white;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 19px;
+      padding: 18px 34px;
+      border-radius: 15px;
+      transition: all 0.3s ease;
+      font-family: $font-family-1;
+      border: 1px solid transparent;
+      background-color: $primary-color;
+      &:hover {
+        border: 1px solid $primary-color;
+        color: $primary-color;
+        background-color: transparent;
+      }
+      &:active {
+        color: $white;
+        background-color: #504e98;
+      }
+    }
+  }
+  &__list {
+    @include dflex;
+    li {
+      width: 410px;
+      border-radius: 20px;
+      flex-direction: column;
+      display: flex !important;
+      background-color: $white;
+      box-shadow: $box-shadow13;
+      align-items: flex-start !important;
+
+      img {
+        width: 410px;
+        height: 350px;
+        object-fit: cover;
+        border-radius: 20px 20px 0px 0px;
+      }
+    }
+  }
+  &__inner-main {
+    width: 100%;
+    padding: 30px;
+  }
+  &__inner {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #eee;
+  }
+  &__name-inner {
+    span {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      color: $text-color;
+      font-family: $font-family-1;
+    }
+    p {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 19px;
+      color: $title-color;
+      font-family: $font-family-1;
+    }
+  }
+  &__inner-img {
+    width: 50px !important;
+    height: 50px !important;
+    object-fit: cover !important;
+    margin-right: 12px !important;
+    border-radius: 15px !important;
+  }
+  &__date {
+    color: $text-color;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;
+    margin-bottom: 25px;
+    font-family: $font-family-1;
+  }
+  &__text {
+    width: 100%;
+    max-width: 340px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 34px;
+    margin-bottom: 26px;
+    color: $title-color;
+    font-family: $font-family-1;
+  }
+  &__read {
+    display: flex;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 20px;
+    align-items: center;
+    color: $primary-color;
+    font-family: $font-family-1;
+    svg {
+      font-size: 22px;
+      transition: all 0.2s ease;
+    }
+    &:hover {
+      svg {
+        margin-left: 4px;
+      }
+    }
+  }
+}

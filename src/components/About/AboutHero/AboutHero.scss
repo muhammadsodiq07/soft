@@ -1,0 +1,24 @@
+@import "../../../assets/sass/mixsins";
+@import "../../../assets/sass/variables";
+
+.aboutHero {
+  &__title {
+    font-family: $font-family-1;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 72px;
+    color: $title-color;
+    margin-bottom: 0px;
+  }
+
+  &__text {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;
+    color: $title-color;
+    font-family: $font-family-1;
+    span {
+      color: $primary-color;
+    }
+  }
+}

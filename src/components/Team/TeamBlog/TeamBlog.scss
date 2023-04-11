@@ -1,0 +1,153 @@
+@import "../../../assets/sass/mixsins";
+@import "../../../assets/sass/variables";
+
+.teamBlog {
+  padding-top: 120px;
+  padding-bottom: 120px;
+
+  &__titel-div {
+    text-align: center;
+  }
+  &__title-span {
+    @include subTitleSpan;
+  }
+  &__title {
+    @include Title;
+  }
+
+  &__list {
+    @include dflex;
+    flex-wrap: wrap;
+    margin-top: 60px;
+  }
+  &__item {
+    position: relative;
+    width: 100%;
+    max-width: 302px;
+    height: 410px;
+    margin-bottom: 24px;
+    // margin-right: 24px;
+    background-color: $white;
+    box-shadow: $box-shadow10;
+    border-radius: $border-radius1;
+    &:nth-child(4) {
+      margin-right: 0;
+    }
+  }
+
+  &__inner-div {
+    padding: 28px 66px;
+    text-align: center;
+  }
+
+  &__img-div {
+    width: 302px;
+    height: 300px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: $border-radius1;
+    }
+  }
+  &__inner-name {
+    font-family: $font-family-1;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: $title-color;
+  }
+  &__inner-span {
+    font-family: $font-family-1;
+    font-weight: 500;
+    font-size: 16px;
+    margin-top: 5px;
+    line-height: 19px;
+    color: $primary-color;
+  }
+
+  // plus button
+
+  // &__inner-plus {
+  //   position: absolute;
+  //   top: 225px;
+  //   right: 30px;
+  // }
+
+  &__inner-plus-span {
+    position: absolute;
+    top: 225px;
+    right: 30px;
+    margin-top: 10px;
+    padding: 8px 10px;
+    border-radius: 50%;
+    background-color: $white;
+    transition: all 0.4s ease;
+    color: $primary-color;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $primary-color;
+
+      svg {
+        color: $white;
+      }
+    }
+  }
+  &__plus {
+    position: relative;
+    top: 2px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  // icons
+
+  &__inner-icons-div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 105px;
+    right: 30px;
+    margin-top: 20px;
+  }
+  &__inner-span-hover {
+    margin-top: 10px;
+    padding: 8px 10px;
+    border-radius: 50%;
+    background-color: $white;
+    transition: all 0.5s ease;
+    color: $primary-color;
+    cursor: pointer;
+    &:hover {
+      background-color: $primary-color;
+
+      svg {
+        color: $white;
+      }
+    }
+  }
+  &__inner-facebook {
+    position: relative;
+    top: 2px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  &__inner-twitter {
+    position: relative;
+    top: 2px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  &__inner-linkedin {
+    position: relative;
+    top: 1px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+  }
+}

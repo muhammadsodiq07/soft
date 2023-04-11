@@ -1,0 +1,57 @@
+@import "./variables";
+
+@mixin dflex {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+}
+
+@mixin flex {
+  display: flex !important;
+  align-items: center !important;
+}
+
+@mixin subTitleSpan {
+  font-family: $font-family-1;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: $primary-color;
+}
+
+@mixin Title {
+  font-family: $font-family-1;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+  color: $title-color;
+}
+
+@mixin hover-btn {
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  &:hover {
+    color: $primary-color;
+    background-color: transparent;
+    border: 2px solid $primary-color;
+  }
+  &:active {
+    color: $white;
+    background-color: $active-btn;
+    border: 2px solid $active-btn;
+  }
+}
+@mixin hover-btn2 {
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+  &:hover {
+    color: $primary-color;
+    background-color: transparent;
+    border: 1px solid $primary-color;
+  }
+  &:active {
+    color: $white;
+    background-color: $active-btn;
+    border: 1px solid $active-btn;
+  }
+}
